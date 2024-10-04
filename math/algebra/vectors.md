@@ -156,3 +156,68 @@ a = [1, 2] \quad \text{and} \quad b = [2, 3]
 $$
 
 then no scalar multiple of $\mathbf{a}$ can give $\mathbf{b}$, so $\mathbf{a}$ and $\mathbf{b}$ are linearly independent.
+
+### Given two sets of vectors $\mathbf{A = {a_1, a_2, a_2, ... , a_n}}$ and $\mathbf{B = {b_1, b_2, ..., b_m}}$, how do you check that they share the same basis?
+
+To determine if two sets of vectors $\mathbf{A}$ and $\mathbf{B}$ share the same basis, you need to verify that both sets span the same vector space. This requires the following steps:
+
+1. **Check that the sets span the same subspace**:
+   - Combine all the vectors from both sets into one matrix and reduce it to row echelon form (or reduced row echelon form). 
+   - If the number of linearly independent vectors is the same for both sets, and they span the same space, then $\mathbf{A}$ and $\mathbf{B}$ share the same basis.
+   
+2. **Linearly combine vectors from one set using the other**:
+   - For each vector in $\mathbf{A}$, check if it can be written as a linear combination of vectors in $\mathbf{B}$. Similarly, check if each vector in $\mathbf{B}$ can be written as a linear combination of vectors in $\mathbf{A}$.
+   - If all vectors in one set can be written as linear combinations of vectors in the other set, the sets share the same basis.
+
+##### Detailed Steps:
+
+1. **Form matrices from both sets**:
+   - Construct matrix $\mathbf{M_A}$ by placing vectors from set $\mathbf{A}$ as columns: 
+   
+   $$
+   M_A = [a_1, a_2, ..., a_n]
+   $$
+
+   - Similarly, construct matrix $\mathbf{M_B}$ from vectors of set $\mathbf{B}$: 
+   
+   $$
+   M_B = [b_1, b_2, ..., b_m]
+   $$
+
+2. **Perform rank analysis**:
+   - Calculate the rank (number of linearly independent vectors) of both matrices, $\mathbf{rank(M_A)}$ and $\mathbf{rank(M_B)}$.
+   - If $\mathbf{rank(M_A)}$ = $\mathbf{rank(M_B)}$, the sets may share the same basis.
+
+3. **Test if one set is a linear combination of the other**:
+   - Solve the system of equations to check if each vector in $\mathbf{A}$ can be expressed as a linear combination of vectors in $\mathbf{B}$, and vice versa.
+   - To test this, for each $\mathbf{a_i}$, solve the equation:
+   
+   $$
+   a_i = c_1 \cdot b_1 + c_2 \cdot b_2 + ... + c_m \cdot b_m
+   $$
+
+   If a solution exists for every $\mathdb{a_i}$ and for every $\mathdb{b_i}$, then the sets share the same basis.
+
+##### Example:
+
+Consider the sets of vectors $\mathbf{A}$ and $\mathbf{B}$:
+- $A = { [1, 0], [0, 1] }$
+- $B = { [1, 1], [1, -1] }$
+
+Step 1: Create matrices from the vectors:
+
+$$
+M_A = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}, \quad
+M_B = \begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}
+$$
+
+Step 2: Find the rank of both matrices. Both $\matbhf{M_A}$ and $\mathbf{M_B}$ have rank 2, indicating that both sets are linearly independent.
+
+Step 3: Test linear combinations. We can write each vector in $\mathbf{A}$ as a combination of vectors in $\mathbd{B}$:
+- $[1, 0] = 0.5 \cdot [1, 1] + 0.5 \cdot [1, -1]$
+- $[0, 1] = 0.5 \cdot [1, 1] - 0.5 \cdot [1, -1]$
+
+Since each vector in $\mathbf{A}$ can be expressed as a linear combination of vectors in $\mathbf{B}$, and vice versa, $\mathbf{A}$ and $\mathbf{B}$ share the same basis.
+
+##### Practical Significance:
+In machine learning and data science, identifying if two sets of features share the same basis is crucial in feature engineering and dimensionality reduction techniques such as **Principal Component Analysis (PCA)**. It helps ensure that the new feature set spans the same space as the original, preserving the essential information.
