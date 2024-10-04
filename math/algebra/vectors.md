@@ -114,3 +114,45 @@ Another important application of the outer product in machine learning is in **t
 ##### Word Embeddings:
 
 In natural language processing (NLP), the outer product can be used in word embedding techniques like **word2vec** to build a co-occurrence matrix. The co-occurrence matrix is created by calculating the outer product of word vectors based on their context in sentences. This matrix helps in understanding how frequently certain words appear together and can be used to capture semantic relationships between words.
+
+### What does it mean for two vectors to be linearly independent?
+
+Two vectors $\mathbf{a}$ and $\mathbg{b}$ are said to be **linearly independent** if no scalar multiple of one vector can be used to express the other. In other words, there is no scalar $\mathbf{c}$ such that:
+
+$$
+a = c \cdot b
+$$
+
+or equivalently:
+
+$$
+b = c \cdot a
+$$
+
+If such a scalar exists, the vectors are **linearly dependent**. If not, they are **linearly independent**.
+
+##### Geometric Interpretation:
+- **Linearly independent vectors** point in different directions. In the case of two vectors in a 2D plane, this means they span the plane, and any vector in that plane can be represented as a linear combination of the two vectors.
+- If two vectors are **linearly dependent**, they lie on the same line or are parallel, meaning one is just a scaled version of the other.
+
+##### Why Linear Independence is Important in Machine Learning:
+1. **Feature Independence**: In machine learning, linear independence is crucial for feature selection. If features (represented as vectors) are linearly dependent, it means they carry redundant information, which can negatively impact the model’s performance by leading to multicollinearity. Models such as linear regression assume that features are linearly independent to avoid redundancy.
+
+2. **Basis for Vector Spaces**: Linear independence is fundamental for constructing a **basis** for a vector space. In data science, the concept of a basis helps in representing data in lower-dimensional spaces, such as in **Principal Component Analysis (PCA)**, where linearly independent components are used to capture the most variance in data.
+
+##### Example:
+Consider two vectors in 2D space:
+
+$$
+a = [1, 2] \quad \text{and} \quad b = [3, 6]
+$$
+
+In this case, $\mathbf{b}$ is just a scalar multiple of $\mathbf{a}$ ($\mathbf{b = 3 \cdot a}$). Hence, $\mathbf{a}$ and $\mathbf{b}$ are linearly dependent.
+
+On the other hand, if:
+
+$$
+a = [1, 2] \quad \text{and} \quad b = [2, 3]
+$$
+
+then no scalar multiple of $\mathbf{a}$ can give $\mathbf{b}$, so $\mathbf{a}$ and $\mathbf{b}$ are linearly independent.
