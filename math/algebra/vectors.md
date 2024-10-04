@@ -25,6 +25,8 @@ where:
 ##### Practical Significance in Machine Learning:
 In machine learning and deep learning, the dot product frequently shows up in operations like calculating the similarity between vectors (e.g., in word embeddings), and in neural network layers where it's used for computing linear transformations.
 
+---
+
 #### Given a vector $\mathbf{u}$, find vector $\mathbf{v}$ of unit length such thsat the dot product of $\mathbf{u}$ and $\mathbf{v}$ is maximum.
 
 To maximize the dot product between two vectors $\mathbf{u}$ and $\mathbf{v}$, we can leverage the geometric interpretation of the dot product:
@@ -50,6 +52,8 @@ This expression ensures that:
 
 ##### Practical Significance:
 In machine learning, this concept is useful in many applications, such as maximizing similarity between vectors (e.g., in embeddings) or optimizing linear models, where aligning a weight vector with the input maximizes the model’s response.
+
+---
 
 ### Outer Product
 #### Given two vectors $\mathbf{a = [3, 2, 1]}$ and $\mathbf{b = [-1, 0, 1]}$, calculate the outer product $\mathbf{a^T b}$.
@@ -83,6 +87,8 @@ $$
 
 ##### Practical Significance:
 The outer product is a fundamental operation in linear algebra and is widely used in machine learning for constructing matrices from vectors, often applied in tasks such as tensor operations and in neural networks.
+
+---
 
 #### Give an example of how the outer product can be useful in ML.
 
@@ -157,6 +163,8 @@ $$
 
 then no scalar multiple of $\mathbf{a}$ can give $\mathbf{b}$, so $\mathbf{a}$ and $\mathbf{b}$ are linearly independent.
 
+---
+
 ### Given two sets of vectors $\mathbf{A = {a_1, a_2, a_2, ... , a_n}}$ and $\mathbf{B = {b_1, b_2, ..., b_m}}$, how do you check that they share the same basis?
 
 To determine if two sets of vectors $\mathbf{A}$ and $\mathbf{B}$ share the same basis, you need to verify that both sets span the same vector space. This requires the following steps:
@@ -222,6 +230,8 @@ Since each vector in $\mathbf{A}$ can be expressed as a linear combination of ve
 ##### Practical Significance:
 In machine learning and data science, identifying if two sets of features share the same basis is crucial in feature engineering and dimensionality reduction techniques such as **Principal Component Analysis (PCA)**. It helps ensure that the new feature set spans the same space as the original, preserving the essential information.
 
+---
+
 ### Given $\mathbf{n}$ vectors, each of $\mathbf{d}$ dimensions. What is the dimension of their span?
 
 The dimension of the **span** of a set of vectors refers to the number of linearly independent vectors in the set. The span of a set of vectors is the vector space formed by all possible linear combinations of those vectors. The dimension of this vector space depends on the number of linearly independent vectors in the set.
@@ -251,6 +261,8 @@ Consider $\mathbf{n = 6}$ vectors in $\mathbf{d = 3}$ dimensional space. Since n
 
 ##### Practical Significance:
 In machine learning, the dimension of the span of feature vectors is crucial for understanding the effective dimensionality of the data. For example, in **Principal Component Analysis (PCA)**, the principal components represent the directions of maximum variance, which correspond to the independent directions (or span) in the dataset. The span of these principal components is often much lower than the original dimensionality, which helps in dimensionality reduction.
+
+---
 
 ### Norm and metrics
 #### What's a norm? What is $\mathbf{L_0}$, $\mathbf{L_1}$, $\mathbf{L_2}$, and $\mathbf{L_norm}$?
@@ -310,6 +322,8 @@ Example for $\mathbf{p = 3}$: For a vector $x = [3, -4, 5]$, $\vert{x}\vert = \r
 - Norms are used to regularize machine learning models, preventing overfitting and improving generalization. Regularization techniques like $\mathbf{L_1}$ and ${\mathbf{L_2}}$ regularization modify the cost function by adding a term proportional to the norm of the model coefficients.
 - Norms also define distances in feature spaces, crucial for algorithms like k-NN, SVM, and clustering algorithms.
 
+---
+
 #### How do norm and metric differ? Given a norm, make a metric. Given a metric, can we make a norm?
 
 A **norm** and a **metric** are both ways of measuring distance, but they are used in slightly different contexts and have distinct properties. Let's break down the differences and their relationship.
@@ -326,8 +340,6 @@ A **norm** and a **metric** are both ways of measuring distance, but they are us
 $$
 \vert{v}\vert_2 = \sqrt{v_1^2 + v_2^2 + \dots + v_n^2}
 $$
-
----
 
 ##### **Metric**:
 - A **metric** defines the **distance** between two points (or vectors) in a space. It quantifies how "far apart" two points are.
