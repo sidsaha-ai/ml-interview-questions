@@ -298,4 +298,4 @@ The $L_2$ norm is used in **Ridge regression** and **SVMs** to minimize the magn
 ##### $\mathbf{L_p}$ Norm:
 The $\mathbf{L_p}$ **norm** generalizes the $\mathbf{L_1}$ and $\mathbf{L_2}$ norms and is defined for any positive real number $\mathbf{p}$.
 
-Formula: $\vert{x}\vert_p = (\sum_{i=1}^{n} \vert{x_i}\vert^p)^1/p$
+Formula: $\vert{x}\vert_p = (\sum_{i=1}^{n} \vert{x_i}\vert^p)^(1/p)$
