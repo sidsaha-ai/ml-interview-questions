@@ -221,3 +221,33 @@ Since each vector in $\mathbf{A}$ can be expressed as a linear combination of ve
 
 ##### Practical Significance:
 In machine learning and data science, identifying if two sets of features share the same basis is crucial in feature engineering and dimensionality reduction techniques such as **Principal Component Analysis (PCA)**. It helps ensure that the new feature set spans the same space as the original, preserving the essential information.
+
+### Given $\mathbf{n}$ vectors, each of $\mathbf{d}$ dimensions. What is the dimension of their span?
+
+The dimension of the **span** of a set of vectors refers to the number of linearly independent vectors in the set. The span of a set of vectors is the vector space formed by all possible linear combinations of those vectors. The dimension of this vector space depends on the number of linearly independent vectors in the set.
+
+##### Key points to determine the dimension of the span:
+
+1. **Maximum dimension**: The dimension of the span can never be greater than the number of dimensions of the vectors, which is $\mathbf{d}$. So, if you have $\mathbf{n}$ vectors in $\mathbf{d}$-dimensional space, the dimension of their span is at most $\mathbf{min(n, d)}$.
+
+2. **Linear independence**: 
+   - If all $\mathbf{n}$ vectors are **linearly independent**, the dimension of the span will be $\mathbf{min(n, d)}$.
+   - If the vectors are **linearly dependent**, the dimension of the span will be less than $\mathbf{n}$, depending on how many vectors are linearly independent.
+
+##### Case 1: $\mathbf{n\leq d}$
+If the number of vectors $\mathbd{n}$ is less than or equal to the dimensionality $\mathbf{d}$, the dimension of the span will be equal to the number of linearly independent vectors in the set. In the best-case scenario, where all vectors are linearly independent, the dimension of the span will be exactly $\mathbf{n}$.
+
+Example:  
+Consider $\mathbf{n = 3}$ vectors in $\mathbf{d = 5}$ dimensional space. If the vectors are linearly independent, the dimension of their span is $\mathbf{3}$.
+
+##### Case 2: $\mathbf{n\gt d}$
+When the number of vectors $\mathbd{n}$ exceeds the dimensionality $\mathbd{d}$, it is impossible for all vectors to be linearly independent. In this case, the maximum number of linearly independent vectors can only be $\mathbd{d}$. So the dimension of the span is capped at $\mathbd{d}$.
+
+Example:  
+Consider $\mathbf{n = 6}$ vectors in $\mathbf{d = 3}$ dimensional space. Since no more than 3 vectors can be linearly independent in a 3-dimensional space, the dimension of their span will be $\mathbf{3}$.
+
+##### General Rule:
+- The dimension of the span is the number of linearly independent vectors, which is $\mathbf{min(n, d)}$.
+
+##### Practical Significance:
+In machine learning, the dimension of the span of feature vectors is crucial for understanding the effective dimensionality of the data. For example, in **Principal Component Analysis (PCA)**, the principal components represent the directions of maximum variance, which correspond to the independent directions (or span) in the dataset. The span of these principal components is often much lower than the original dimensionality, which helps in dimensionality reduction.
