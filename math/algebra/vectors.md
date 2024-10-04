@@ -343,36 +343,36 @@ $$
 
 ##### **Metric**:
 - A **metric** defines the **distance** between two points (or vectors) in a space. It quantifies how "far apart" two points are.
-- A metric \( d \) on a space \( X \) satisfies the following properties for all points \( x, y, z \in X \):
-  1. **Non-negativity**: \( d(x, y) \geq 0 \) and \( d(x, y) = 0 \) if and only if \( x = y \)
-  2. **Symmetry**: \( d(x, y) = d(y, x) \)
-  3. **Triangle Inequality**: \( d(x, z) \leq d(x, y) + d(y, z) \)
+- A metric $d$ on a space $X$ satisfies the following properties for all points $x, y, z \in X$:
+  1. **Non-negativity**: $d(x, y) \geq 0$ and $d(x, y) = 0$ if and only if $x = y$
+  2. **Symmetry**: $d(x, y) = d(y, x)$
+  3. **Triangle Inequality**: $d(x, z) \leq d(x, y) + d(y, z)$
 
-- **Example**: The **Euclidean metric** (distance) between two vectors \( x = [x_1, x_2, \dots, x_n] \) and \( y = [y_1, y_2, \dots, y_n] \) is defined as:
-  \[
-  d(x, y) = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + \dots + (x_n - y_n)^2}
-  \]
+- **Example**: The **Euclidean metric** (distance) between two vectors $x = [x_1, x_2, \dots, x_n]$ and $y = [y_1, y_2, \dots, y_n]$ is defined as:
 
----
+$$
+d(x, y) = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + \dots + (x_n - y_n)^2}
+$$
 
-### 1. **Given a norm, how can we create a metric?**
+##### 1. **Given a norm, how can we create a metric?**
 
-A **norm** can always be used to define a **metric**. The metric induced by a norm \( \| \cdot \| \) on a vector space \( V \) is called the **norm-induced metric**. The distance between two vectors \( x \) and \( y \) is defined as the norm of their difference:
+A **norm** can always be used to define a **metric**. The metric induced by a norm $\vert{\cdot}\vert$ on a vector space $V$ is called the **norm-induced metric**. The distance between two vectors $x$ and $y$ is defined as the norm of their difference:
 
-\[
-d(x, y) = \| x - y \|
-\]
+$$
+d(x, y) = \vert{x - y}\vert
+$$
 
 This means that, given a norm, the corresponding metric is the distance between two vectors based on their norm.
 
 - **Example**:  
-  Using the **L₂ norm**, the distance between two vectors \( x \) and \( y \) is:
-  \[
-  d(x, y) = \| x - y \|_2 = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + \dots + (x_n - y_n)^2}
-  \]
+  Using the $\mathbf{L_2}$ **norm**, the distance between two vectors $x$ and $y$ is:
+
+$$
+d(x, y) = \vert{x - y}\vert_2 = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + \dots + (x_n - y_n)^2}
+$$
+  
   This is the **Euclidean distance**, which is an example of a metric derived from the L₂ norm.
 
----
 
 ### 2. **Given a metric, can we make a norm?**
 
