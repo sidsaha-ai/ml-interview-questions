@@ -300,4 +300,4 @@ The $\mathbf{L_p}$ **norm** generalizes the $\mathbf{L_1}$ and $\mathbf{L_2}$ no
 
 Formula: $\vert{x}\vert_p = (\sum_{i=1}^{n} \vert{x_i}\vert^p)^(1/p)$
 
-Example for $\mathbf{p = 3}$: For a vector $x = [3, -4, 5]$, $\vert{x}\vert = \root{\displaystyle{3}}\of{x}$
+Example for $\mathbf{p = 3}$: For a vector $x = [3, -4, 5]$, $\vert{x}\vert = \root{\displaystyle{3}}\of{\vert{x}\vert^3 + \vert{-4}\vert^3 + \vert{5}\vert^3}$
