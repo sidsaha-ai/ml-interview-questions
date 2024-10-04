@@ -255,12 +255,10 @@ In machine learning, the dimension of the span of feature vectors is crucial for
 ### Norm and metrics
 #### What's a norm? What is $\mathbf{L_0}$, $\mathbf{L_1}$, $\mathbf{L_2}$, and $\mathbf{L_norm}$?
 
-##### What's a norm? What is **L₀**, **L₁**, **L₂**, **L_p** norm?
-
 A **norm** is a function that assigns a non-negative length or size to a vector in a vector space. In simple terms, it measures the "magnitude" of a vector. Norms are widely used in various fields such as mathematics, physics, and machine learning to quantify the size of vectors.
 
 Norms have several important properties:
-1. **Non-negativity**: $\vert{\vert{x}\vert}\vert\geq 0$
+1. **Non-negativity**: $\vert{x}\vert\geq 0$
 2. **Definiteness**: \( \|x\| = 0 \) if and only if \( x = 0 \)
 3. **Homogeneity**: \( \|\alpha x\| = |\alpha| \cdot \|x\| \) (scaling property)
 4. **Triangle inequality**: \( \|x + y\| \leq \|x\| + \|y\| \)
