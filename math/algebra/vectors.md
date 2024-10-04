@@ -268,7 +268,7 @@ Now, let's discuss specific types of norms used in machine learning:
 ##### $\mathbf{L_0}$ norm:
 The $\mathbf{L_0}$ **norm** counts the number of **non-zero elements** in the vector. It doesn't technically satisfy all the properties of a norm (specifically, the triangle inequality), but it is often referred to as a "norm" in practice.
 
-Formula: $\vert{x}\vert = number \, of \, non \, zero \, elements \, in \, x$
+Formula: $\vert{x}\vert = number \ of \ non \ zero \ elements \ in \ x$
 
 Example: For a vector $x = [3, 0, 4, 0]$, $\vert{x}\vert = 2$ (because there are two non-zero elements: 3 and 4)
 
