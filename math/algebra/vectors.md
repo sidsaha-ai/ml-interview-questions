@@ -50,3 +50,36 @@ This expression ensures that:
 
 ##### Practical Significance:
 In machine learning, this concept is useful in many applications, such as maximizing similarity between vectors (e.g., in embeddings) or optimizing linear models, where aligning a weight vector with the input maximizes the model’s response.
+
+### Outer Product
+#### Given two vectors $\mathbf{a = [3, 2, 1]}$ and $\mathbf{b = [-1, 0, 1]}$, calculate the outer product $\mathbf{a^Tb}$.
+
+The outer product of two vectors $\mathbf{a}$ and $\mathbf{b}$ results in a matrix. For vectors $\mathbf{a}$ (with shape $n \times 1$) and $\mathbf{b}$ (with shape $1 \times m$), the outer product is a matrix where each element $$C_{ij}$ is computed as:
+
+$$
+C_{ij} = a_i * b_j
+$$
+
+For the vectors $\mathbf{a = [3, 2, 1]}$ and $\mathbf{b = [-1, 0, 1]}$, the outer product $\mathbf{a^Tb}$ can be calculated as follows:
+
+$$
+a^Tb = \begin{bmatrix}
+3 \cdot (-1) & 3 \cdot 0 & 3 \cdot 1 \\
+2 \cdot (-1) & 2 \cdot 0 & 2 \cdot 1 \\
+1 \cdot (-1) & 1 \cdot 0 & 1 \cdot 1
+\end{bmatrix}
+$$
+
+This gives us:
+
+$$
+a^T b = 
+\begin{bmatrix}
+-3 & 0 & 3 \\
+-2 & 0 & 2 \\
+-1 & 0 & 1
+\end{bmatrix}
+$$
+
+##### Practical Significance:
+The outer product is a fundamental operation in linear algebra and is widely used in machine learning for constructing matrices from vectors, often applied in tasks such as tensor operations and in neural networks.
