@@ -301,3 +301,7 @@ The $\mathbf{L_p}$ **norm** generalizes the $\mathbf{L_1}$ and $\mathbf{L_2}$ no
 Formula: $\vert{x}\vert_p = \root{\displaystyle{p}}\of{\sum_{i=1}^{n} \vert{x_i}\vert}$
 
 Example for $\mathbf{p = 3}$: For a vector $x = [3, -4, 5]$, $\vert{x}\vert = \root{\displaystyle{3}}\of{\vert{3}\vert^3 + \vert{-4}\vert^3 + \vert{5}\vert^3} = \root{\displaystyle{3}}\of{27 + 64 + 125} = \root{\displaystyle{3}}\of{216} = 6$
+
+##### Special cases:
+- $\mathbf{L_1}$ **norm** is the $\mathbf{L_p}$ **norm** for $\mathbf{p = 1}$.
+- $\mathbf{L_2}$ **norm** is the $\mathbf{L_p}$ **norm** for $\mathbf{p = 2}$.
