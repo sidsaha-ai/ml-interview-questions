@@ -8,7 +8,7 @@ Below are the questions and answers of questions related to vectors.
 The dot product of two vectors $`\mathbf{a}`$ and $`\mathbf{b}`$ in Euclidean space can be interpreted geometrically as:
 
 $$
-\mathbf{a} \cdot \mathbf{b} = \vert{a}\vert \vert{b}\vert \cos(\theta}
+\mathbf{a} \cdot \mathbf{b} = \vert{a}\vert \vert{b}\vert \cos(\theta)
 $$
 
 $$\[
