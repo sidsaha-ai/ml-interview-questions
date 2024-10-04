@@ -174,15 +174,11 @@ To determine if two sets of vectors $\mathbf{A}$ and $\mathbf{B}$ share the same
 1. **Form matrices from both sets**:
    - Construct matrix $\mathbf{M_A}$ by placing vectors from set $\mathbf{A}$ as columns: 
    
-   $$
-   M_A = [a_1, a_2, ..., a_n]
-   $$
+   $M_A = [a_1, a_2, ..., a_n]$
 
    - Similarly, construct matrix $\mathbf{M_B}$ from vectors of set $\mathbf{B}$: 
    
-   $$
-   M_B = [b_1, b_2, ..., b_m]
-   $$
+   $M_B = [b_1, b_2, ..., b_m]$
 
 2. **Perform rank analysis**:
    - Calculate the rank (number of linearly independent vectors) of both matrices, $\mathbf{rank(M_A)}$ and $\mathbf{rank(M_B)}$.
