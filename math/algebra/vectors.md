@@ -117,7 +117,7 @@ In natural language processing (NLP), the outer product can be used in word embe
 
 ### What does it mean for two vectors to be linearly independent?
 
-Two vectors $\mathbf{a}$ and $\mathbg{b}$ are said to be **linearly independent** if no scalar multiple of one vector can be used to express the other. In other words, there is no scalar $\mathbf{c}$ such that:
+Two vectors $\mathbf{a}$ and $\mathbf{b}$ are said to be **linearly independent** if no scalar multiple of one vector can be used to express the other. In other words, there is no scalar $\mathbf{c}$ such that:
 
 $$
 a = c \cdot b
