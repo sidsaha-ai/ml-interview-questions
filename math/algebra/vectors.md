@@ -266,14 +266,12 @@ Norms have several important properties:
 Now, let's discuss specific types of norms used in machine learning:
 
 ##### $\mathbf{L_0}$ norm:
-- The $\mathbf{L_0}$ **norm** counts the number of **non-zero elements** in the vector. It doesn't technically satisfy all the properties of a norm (specifically, the triangle inequality), but it is often referred to as a "norm" in practice.
-- Formula:
-  \[
-  \|x\|₀ = \text{number of non-zero elements in } x
-  \]
-- Example:  
-  For a vector \( x = [3, 0, 4, 0] \),  
-  \( \|x\|₀ = 2 \) (because there are two non-zero elements: 3 and 4).
+The $\mathbf{L_0}$ **norm** counts the number of **non-zero elements** in the vector. It doesn't technically satisfy all the properties of a norm (specifically, the triangle inequality), but it is often referred to as a "norm" in practice.
+Formula:   
+$$
+\vert{x}\vert = number of non zero elements in x
+Example:   
+For a vector $x = [3, 0, 4, 0]$, $\vert{x}\vert = 2$ (because there are two non-zero elements: 3 and 4)
 
 **Use in Machine Learning**:  
 The L₀ norm is often used in **sparse learning** methods, where the goal is to minimize the number of non-zero features in a model. However, due to its discrete nature, the L₀ norm is non-differentiable and computationally expensive.
