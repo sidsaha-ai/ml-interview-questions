@@ -188,11 +188,9 @@ To determine if two sets of vectors $\mathbf{A}$ and $\mathbf{B}$ share the same
    - Solve the system of equations to check if each vector in $\mathbf{A}$ can be expressed as a linear combination of vectors in $\mathbf{B}$, and vice versa.
    - To test this, for each $\mathbf{a_i}$, solve the equation:
    
-   $$
-   a_i = c_1 \cdot b_1 + c_2 \cdot b_2 + ... + c_m \cdot b_m
-   $$
+   $a_i = c_1 \cdot b_1 + c_2 \cdot b_2 + ... + c_m \cdot b_m$
 
-   If a solution exists for every $\mathdb{a_i}$ and for every $\mathdb{b_i}$, then the sets share the same basis.
+   If a solution exists for every $\mathbf{a_i}$ and for every $\mathbf{b_i}$, then the sets share the same basis.
 
 ##### Example:
 
@@ -203,8 +201,14 @@ Consider the sets of vectors $\mathbf{A}$ and $\mathbf{B}$:
 Step 1: Create matrices from the vectors:
 
 $$
-M_A = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}, \quad
-M_B = \begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}
+M_A = \begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix}, \quad
+M_B = \begin{bmatrix}
+1 & 1 \\
+1 & -1 
+\end{bmatrix}
 $$
 
 Step 2: Find the rank of both matrices. Both $\matbhf{M_A}$ and $\mathbf{M_B}$ have rank 2, indicating that both sets are linearly independent.
