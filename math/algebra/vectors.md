@@ -45,7 +45,7 @@ v = u / \vert{u}\vert
 $$
 
 This expression ensures that:
-- $\mathb{v}$ has unit length (i.e. $\mathbf{\vert{v}\vert = 1}$), and
+- $\mathbf{v}$ has unit length (i.e. $\mathbf{\vert{v}\vert = 1}$), and
 - The dot product is maximized as $\mathbf{v}$ is aligned with $\mathbf{u}$.
 
 ##### Practical Significance:
