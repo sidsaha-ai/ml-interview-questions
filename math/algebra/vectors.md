@@ -16,7 +16,7 @@ where:
 - $`\mathbf{\theta}`$ is the angle between the two vectors.
 
 ##### Key Geometrical Insights:
-1. **Cosine Relationship**: The dot product encodes the cosine of the angle between the vectors. If the vectors point in the same direction, $`\( \cos(\theta) = 1 \)`$, and the dot product is maximized. If they are orthogonal (at 90°), $`\( \cos(\theta) = 0 \)`$, and the dot product is zero. If they point in opposite directions, $`\( \cos(\theta) = -1 \)`$, and the dot product is negative.
+1. **Cosine Relationship**: The dot product encodes the cosine of the angle between the vectors. If the vectors point in the same direction, $`\mathbf{\cos(\theta) = 1}`$, and the dot product is maximized. If they are orthogonal (at 90°), $`\mathbf{\cos(\theta) = 0}`$, and the dot product is zero. If they point in opposite directions, $`\mathbf{\cos(\theta) = -1}`$, and the dot product is negative.
    
 2. **Projection**: The dot product can also be interpreted as the magnitude of one vector projected onto the other. Specifically, $`\( \mathbf{a} \cdot \mathbf{b} = \|\mathbf{a}\| \|\mathbf{b}\| \cos(\theta) \)`$ is the magnitude of $`\( \mathbf{a} \)`$ in the direction of $`\( \mathbf{b} \)`$, scaled by $`\( \|\mathbf{b}\| \)`$.
 
