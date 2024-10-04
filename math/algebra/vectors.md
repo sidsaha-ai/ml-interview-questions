@@ -317,14 +317,15 @@ A **norm** and a **metric** are both ways of measuring distance, but they are us
 ##### **Norm**:
 - A **norm** measures the **size** or **length** of a vector. It assigns a non-negative value to a vector in a vector space, which represents the "magnitude" of that vector.
 - Mathematically, a norm $\vert{\cdot}\vert$ on a vector space $V$ is a function that satisfies the following properties for all vectors $u, v \in V$ and scalar $\alpha$:
-  1. **Non-negativity**: \( \|v\| \geq 0 \) and \( \|v\| = 0 \) if and only if \( v = 0 \)
-  2. **Homogeneity** (Scaling): \( \|\alpha v\| = |\alpha| \|v\| \)
-  3. **Triangle Inequality**: \( \|u + v\| \leq \|u\| + \|v\| \)
+  1. **Non-negativity**: $\vert{v}\vert\geq 0$ and $\vert{v}\vert = 0$ if and only if $v = 0$
+  2. **Homogeneity** (Scaling): $\vert{\alpha v}\vert = \vett{b}\vert\ \vert{v}\vert$ 
+  3. **Triangle Inequality**: $\vert{u + v}\vert\leq \vert{u}\vert + \vert{v}\vert$
 
-- **Example**: The **L₂ norm** (Euclidean norm) for a vector \( v = [v_1, v_2, \dots, v_n] \) is defined as:
-  \[
-  \|v\|_2 = \sqrt{v_1^2 + v_2^2 + \dots + v_n^2}
-  \]
+**Example**: The $\mathbf{L_2}$ **norm** (Euclidean norm) for a vector $v = [v_1, v_2, \dots, v_n]$ is defined as:
+
+$$
+\vert{v}\vert_2 = \sqrt{v_1^2 + v_2^2 + \dots + v_n^2}
+$$
 
 ---
 
