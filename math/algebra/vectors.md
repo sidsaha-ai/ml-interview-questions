@@ -318,7 +318,7 @@ A **norm** and a **metric** are both ways of measuring distance, but they are us
 - A **norm** measures the **size** or **length** of a vector. It assigns a non-negative value to a vector in a vector space, which represents the "magnitude" of that vector.
 - Mathematically, a norm $\vert{\cdot}\vert$ on a vector space $V$ is a function that satisfies the following properties for all vectors $u, v \in V$ and scalar $\alpha$:
   1. **Non-negativity**: $\vert{v}\vert\geq 0$ and $\vert{v}\vert = 0$ if and only if $v = 0$
-  2. **Homogeneity** (Scaling): $\vert{\alpha v}\vert = \vett{b}\vert\ \vert{v}\vert$ 
+  2. **Homogeneity** (Scaling): $\vert{\alpha v}\vert = \vert{b}\vert\ \vert{v}\vert$ 
   3. **Triangle Inequality**: $\vert{u + v}\vert\leq \vert{u}\vert + \vert{v}\vert$
 
 **Example**: The $\mathbf{L_2}$ **norm** (Euclidean norm) for a vector $v = [v_1, v_2, \dots, v_n]$ is defined as:
