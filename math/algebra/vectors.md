@@ -277,7 +277,9 @@ The $L_0$ norm is often used in **sparse learning** methods, where the goal is t
 
 ##### $\mathbf{L_1}$ norm$:
 The $\mathbf{L_1}$ **norm** is the sum of the **absolute values** of the vector elements. It measures the "taxicab" distance between points.
+
 Formula: $\vert{x}\vert = \sum_{i=1}^{n} \vert{x_i}\vert$
+
 Example: For a vector $x = [3, -4, 5]$, $\vert{x}\vert = \vert{3}\vert + \vert{-4}\vert + \vert{5}\vert = 12$.
 
 **Use in Machine Learning**:  
