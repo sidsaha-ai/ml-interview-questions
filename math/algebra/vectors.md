@@ -251,3 +251,63 @@ Consider $\mathbf{n = 6}$ vectors in $\mathbf{d = 3}$ dimensional space. Since n
 
 ##### Practical Significance:
 In machine learning, the dimension of the span of feature vectors is crucial for understanding the effective dimensionality of the data. For example, in **Principal Component Analysis (PCA)**, the principal components represent the directions of maximum variance, which correspond to the independent directions (or span) in the dataset. The span of these principal components is often much lower than the original dimensionality, which helps in dimensionality reduction.
+
+### Norm and metrics
+#### What's a norm? What is $\mathbf{L_0}$, $\mathbf{L_1}$, $\mathbf{L_2}$, and $\mathbf{L_norm}$?
+
+##### What's a norm? What is **L₀**, **L₁**, **L₂**, **L_p** norm?
+
+A **norm** is a function that assigns a non-negative length or size to a vector in a vector space. In simple terms, it measures the "magnitude" of a vector. Norms are widely used in various fields such as mathematics, physics, and machine learning to quantify the size of vectors.
+
+Norms have several important properties:
+1. **Non-negativity**: $\vert{\vert{x}\vert}\vert\geq 0$
+2. **Definiteness**: \( \|x\| = 0 \) if and only if \( x = 0 \)
+3. **Homogeneity**: \( \|\alpha x\| = |\alpha| \cdot \|x\| \) (scaling property)
+4. **Triangle inequality**: \( \|x + y\| \leq \|x\| + \|y\| \)
+
+Now, let's discuss specific types of norms used in machine learning:
+
+##### **L₀ Norm (ℓ₀ norm)**:
+- The **L₀ norm** counts the number of **non-zero elements** in the vector. It doesn't technically satisfy all the properties of a norm (specifically, the triangle inequality), but it is often referred to as a "norm" in practice.
+- Formula:
+  \[
+  \|x\|₀ = \text{number of non-zero elements in } x
+  \]
+- Example:  
+  For a vector \( x = [3, 0, 4, 0] \),  
+  \( \|x\|₀ = 2 \) (because there are two non-zero elements: 3 and 4).
+
+**Use in Machine Learning**:  
+The L₀ norm is often used in **sparse learning** methods, where the goal is to minimize the number of non-zero features in a model. However, due to its discrete nature, the L₀ norm is non-differentiable and computationally expensive.
+
+##### **L₁ Norm (ℓ₁ norm)**:
+- The **L₁ norm** is the sum of the **absolute values** of the vector elements. It measures the "taxicab" distance between points.
+- Formula:
+  \[
+  \|x\|₁ = \sum_{i=1}^{n} |x_i|
+  \]
+- Example:  
+  For a vector \( x = [3, -4, 5] \),  
+  \( \|x\|₁ = |3| + |-4| + |5| = 12 \).
+
+**Use in Machine Learning**:  
+The L₁ norm is used in **Lasso regression** for feature selection, where it encourages sparsity in the model coefficients, setting many of them to zero.
+
+##### **L₂ Norm (ℓ₂ norm or Euclidean norm)**:
+- The **L₂ norm** is the **square root of the sum of the squares** of the vector elements. This is the most commonly used norm and represents the Euclidean distance from the origin to the vector.
+- Formula:
+  \[
+  \|x\|₂ = \sqrt{\sum_{i=1}^{n} x_i^2}
+  \]
+- Example:  
+  For a vector \( x = [3, -4, 5] \),  
+  \( \|x\|₂ = \sqrt{3^2 + (-4)^2 + 5^2} = \sqrt{9 + 16 + 25} = \sqrt{50} \approx 7.07 \).
+
+**Use in Machine Learning**:  
+The L₂ norm is used in **Ridge regression** and **SVMs** to minimize the magnitude of the model coefficients, preventing overfitting.
+
+##### **L_p Norm**:
+- The **L_p norm** generalizes the L₁ and L₂ norms and is defined for any positive real number **p**.
+- Formula:
+  \[
+  \|x\|_p = \left
