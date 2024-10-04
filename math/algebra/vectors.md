@@ -93,6 +93,9 @@ Suppose you have a dataset with two feature vectors, $\mathbf{x}$ and $\mathbf{y
 
 $$
 x = [x_1, x_2, …, x_n]
+$$
+
+$$
 y = [y_1, y_2, …, y_n]
 $$
 
