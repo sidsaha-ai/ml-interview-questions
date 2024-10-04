@@ -293,10 +293,9 @@ Formula: $\vert{x}\vert = \sqrt{\sum_{i=1}^{n} (x_i)^2}$
 Example: For a vector $x = [4, -4, 5]$, $\vert{x}\vert = \sqrt{3^2 + (-4)^2 + 5^2} = \sqrt{9 + 16 + 25} = \sqrt{50} \approx 7.07$.
 
 **Use in Machine Learning**:  
-The L₂ norm is used in **Ridge regression** and **SVMs** to minimize the magnitude of the model coefficients, preventing overfitting.
+The $L_2$ norm is used in **Ridge regression** and **SVMs** to minimize the magnitude of the model coefficients, preventing overfitting.
 
-##### **L_p Norm**:
-- The **L_p norm** generalizes the L₁ and L₂ norms and is defined for any positive real number **p**.
-- Formula:
-  \[
-  \|x\|_p = \left
+##### $\mathbf{L_p}$ Norm:
+The $\mathbf{L_p}$ **norm** generalizes the $\mathbf{L_1}$ and $\mathbf{L_2}$ norms and is defined for any positive real number $\mathbf{p}$.
+
+Formula: $\vert{x}\vert_p = (\sum_{i=1}^{n} \vert{x_i}\vert^p)^(1\div p)$
