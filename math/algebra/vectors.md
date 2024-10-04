@@ -305,3 +305,7 @@ Example for $\mathbf{p = 3}$: For a vector $x = [3, -4, 5]$, $\vert{x}\vert = \r
 ##### Special cases:
 - $\mathbf{L_1}$ **norm** is the $\mathbf{L_p}$ **norm** for $\mathbf{p = 1}$.
 - $\mathbf{L_2}$ **norm** is the $\mathbf{L_p}$ **norm** for $\mathbf{p = 2}$.
+
+##### Practical Use of Norms in Machine Learning:
+- Norms are used to regularize machine learning models, preventing overfitting and improving generalization. Regularization techniques like $\mathbf{L_1}$ and ${\mathbf{L_2}}$ regularization modify the cost function by adding a term proportional to the norm of the model coefficients.
+- Norms also define distances in feature spaces, crucial for algorithms like k-NN, SVM, and clustering algorithms.
