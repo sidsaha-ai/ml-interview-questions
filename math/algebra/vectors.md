@@ -235,13 +235,13 @@ The dimension of the **span** of a set of vectors refers to the number of linear
    - If the vectors are **linearly dependent**, the dimension of the span will be less than $\mathbf{n}$, depending on how many vectors are linearly independent.
 
 ##### Case 1: $\mathbf{n\leq d}$
-If the number of vectors $\mathbd{n}$ is less than or equal to the dimensionality $\mathbf{d}$, the dimension of the span will be equal to the number of linearly independent vectors in the set. In the best-case scenario, where all vectors are linearly independent, the dimension of the span will be exactly $\mathbf{n}$.
+If the number of vectors $\mathbf{n}$ is less than or equal to the dimensionality $\mathbf{d}$, the dimension of the span will be equal to the number of linearly independent vectors in the set. In the best-case scenario, where all vectors are linearly independent, the dimension of the span will be exactly $\mathbf{n}$.
 
 Example:  
 Consider $\mathbf{n = 3}$ vectors in $\mathbf{d = 5}$ dimensional space. If the vectors are linearly independent, the dimension of their span is $\mathbf{3}$.
 
 ##### Case 2: $\mathbf{n\gt d}$
-When the number of vectors $\mathbd{n}$ exceeds the dimensionality $\mathbd{d}$, it is impossible for all vectors to be linearly independent. In this case, the maximum number of linearly independent vectors can only be $\mathbd{d}$. So the dimension of the span is capped at $\mathbd{d}$.
+When the number of vectors $\mathbf{n}$ exceeds the dimensionality $\mathbf{d}$, it is impossible for all vectors to be linearly independent. In this case, the maximum number of linearly independent vectors can only be $\mathbf{d}$. So the dimension of the span is capped at $\mathbf{d}$.
 
 Example:  
 Consider $\mathbf{n = 6}$ vectors in $\mathbf{d = 3}$ dimensional space. Since no more than 3 vectors can be linearly independent in a 3-dimensional space, the dimension of their span will be $\mathbf{3}$.
