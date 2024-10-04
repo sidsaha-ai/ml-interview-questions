@@ -213,7 +213,7 @@ $$
 
 Step 2: Find the rank of both matrices. Both $\mathbf{M_A}$ and $\mathbf{M_B}$ have rank 2, indicating that both sets are linearly independent.
 
-Step 3: Test linear combinations. We can write each vector in $\mathbf{A}$ as a combination of vectors in $\mathbd{B}$:
+Step 3: Test linear combinations. We can write each vector in $\mathbf{A}$ as a combination of vectors in $\mathbf{B}$:
 - $[1, 0] = 0.5 \cdot [1, 1] + 0.5 \cdot [1, -1]$
 - $[0, 1] = 0.5 \cdot [1, 1] - 0.5 \cdot [1, -1]$
 
