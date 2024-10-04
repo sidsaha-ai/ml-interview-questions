@@ -275,7 +275,7 @@ Example: For a vector $x = [3, 0, 4, 0]$, $\vert{x}\vert = 2$ (because there are
 **Use in Machine Learning**:  
 The $L_0$ norm is often used in **sparse learning** methods, where the goal is to minimize the number of non-zero features in a model. However, due to its discrete nature, the $L_0$ norm is non-differentiable and computationally expensive.
 
-##### $\mathbf{L_1}$ norm$:
+##### $\mathbf{L_1}$ norm:
 The $\mathbf{L_1}$ **norm** is the sum of the **absolute values** of the vector elements. It measures the "taxicab" distance between points.
 
 Formula: $\vert{x}\vert = \sum_{i=1}^{n} \vert{x_i}\vert$
