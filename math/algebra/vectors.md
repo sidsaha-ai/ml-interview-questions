@@ -309,3 +309,77 @@ Example for $\mathbf{p = 3}$: For a vector $x = [3, -4, 5]$, $\vert{x}\vert = \r
 ##### Practical Use of Norms in Machine Learning:
 - Norms are used to regularize machine learning models, preventing overfitting and improving generalization. Regularization techniques like $\mathbf{L_1}$ and ${\mathbf{L_2}}$ regularization modify the cost function by adding a term proportional to the norm of the model coefficients.
 - Norms also define distances in feature spaces, crucial for algorithms like k-NN, SVM, and clustering algorithms.
+
+#### How do norm and metric differ? Given a norm, make a metric. Given a metric, can we make a norm?
+
+A **norm** and a **metric** are both ways of measuring distance, but they are used in slightly different contexts and have distinct properties. Let's break down the differences and their relationship.
+
+##### **Norm**:
+- A **norm** measures the **size** or **length** of a vector. It assigns a non-negative value to a vector in a vector space, which represents the "magnitude" of that vector.
+- Mathematically, a norm $\vert{\cdot}\vert$ on a vector space $V$ is a function that satisfies the following properties for all vectors $u, v \in V$ and scalar $\alpha$:
+  1. **Non-negativity**: \( \|v\| \geq 0 \) and \( \|v\| = 0 \) if and only if \( v = 0 \)
+  2. **Homogeneity** (Scaling): \( \|\alpha v\| = |\alpha| \|v\| \)
+  3. **Triangle Inequality**: \( \|u + v\| \leq \|u\| + \|v\| \)
+
+- **Example**: The **L₂ norm** (Euclidean norm) for a vector \( v = [v_1, v_2, \dots, v_n] \) is defined as:
+  \[
+  \|v\|_2 = \sqrt{v_1^2 + v_2^2 + \dots + v_n^2}
+  \]
+
+---
+
+##### **Metric**:
+- A **metric** defines the **distance** between two points (or vectors) in a space. It quantifies how "far apart" two points are.
+- A metric \( d \) on a space \( X \) satisfies the following properties for all points \( x, y, z \in X \):
+  1. **Non-negativity**: \( d(x, y) \geq 0 \) and \( d(x, y) = 0 \) if and only if \( x = y \)
+  2. **Symmetry**: \( d(x, y) = d(y, x) \)
+  3. **Triangle Inequality**: \( d(x, z) \leq d(x, y) + d(y, z) \)
+
+- **Example**: The **Euclidean metric** (distance) between two vectors \( x = [x_1, x_2, \dots, x_n] \) and \( y = [y_1, y_2, \dots, y_n] \) is defined as:
+  \[
+  d(x, y) = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + \dots + (x_n - y_n)^2}
+  \]
+
+---
+
+### 1. **Given a norm, how can we create a metric?**
+
+A **norm** can always be used to define a **metric**. The metric induced by a norm \( \| \cdot \| \) on a vector space \( V \) is called the **norm-induced metric**. The distance between two vectors \( x \) and \( y \) is defined as the norm of their difference:
+
+\[
+d(x, y) = \| x - y \|
+\]
+
+This means that, given a norm, the corresponding metric is the distance between two vectors based on their norm.
+
+- **Example**:  
+  Using the **L₂ norm**, the distance between two vectors \( x \) and \( y \) is:
+  \[
+  d(x, y) = \| x - y \|_2 = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + \dots + (x_n - y_n)^2}
+  \]
+  This is the **Euclidean distance**, which is an example of a metric derived from the L₂ norm.
+
+---
+
+### 2. **Given a metric, can we make a norm?**
+
+Not all **metrics** can generate a **norm**, but some can. In particular, a metric can induce a norm **if and only if** the space is a **vector space** and the metric satisfies additional properties that correspond to norm properties, such as scaling and linearity.
+
+For a metric \( d(x, y) \) to define a norm, it must satisfy the following condition for scalar multiplication:
+\[
+d(\alpha x, 0) = |\alpha| d(x, 0)
+\]
+
+This condition ensures that the metric behaves like a norm under scaling.
+
+- **Example**:  
+  The Euclidean metric (distance) can induce the L₂ norm. However, some metrics, like the **discrete metric** (which assigns a distance of 0 for identical points and 1 for distinct points), do not have a corresponding norm because they don’t scale linearly with vector magnitudes.
+
+---
+
+### Summary:
+
+- A **norm** defines the **magnitude** of vectors and can always induce a **metric** that measures the distance between vectors.
+- A **metric** defines the **distance** between points, but not all metrics can induce a norm. Only metrics that satisfy certain conditions, such as being defined on a vector space and obeying linear scaling, can generate a norm.
+
+Norms and metrics are both fundamental in machine learning and mathematics, as they form the basis for measuring distances, similarities, and general relationships in data spaces. Understanding the connection between norms and metrics is essential for tasks such as optimization, regularization, and geometric interpretations of data.
