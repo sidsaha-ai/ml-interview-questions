@@ -83,3 +83,31 @@ $$
 
 ##### Practical Significance:
 The outer product is a fundamental operation in linear algebra and is widely used in machine learning for constructing matrices from vectors, often applied in tasks such as tensor operations and in neural networks.
+
+#### Give an example of how the outer product can be useful in ML.
+
+The outer product is a key operation in many machine learning applications. One practical example is in the construction of **covariance matrices**, which are essential in understanding the relationships between different features in a dataset.
+
+##### Covariance Matrix Example:
+Suppose you have a dataset with two feature vectors, $\mathbf{x}$ and $\mathbf{y}$, representing two different variables observed over several samples:
+
+$$
+x = [x_1, x_2, …, x_n]
+y = [y_1, y_2, …, y_n]
+$$
+
+To understand how these two features relate to each other, you can compute their covariance. The covariance matrix is calculated as:
+
+$$
+cov(x, y) = E[(x - E[x])(y - E[y])^T]
+$$
+
+The outer product comes into play in the term $(x - E[x])(y - E[y])^T$, which computes the pairwise product between the deviations of the vectors $\mathbf{x}$ and $\mathbf{y}$ from their means. This outer product gives you insight into how these two features vary together. If the outer product results in large positive values, it means that $\mathbf{x}$ and $\mathbf{y}$ tend to increase together; if it’s negative, one increases while the other decreases.
+
+##### Tensor Factorization in Neural Networks:
+
+Another important application of the outer product in machine learning is in **tensor factorization**. In some deep learning architectures (such as attention mechanisms or in recommendation systems), interactions between features are often modeled using outer products. By taking the outer product of two vectors, you capture all pairwise interactions between their components, which can be used for learning complex relationships between features.
+
+##### Word Embeddings:
+
+In natural language processing (NLP), the outer product can be used in word embedding techniques like **word2vec** to build a co-occurrence matrix. The co-occurrence matrix is created by calculating the outer product of word vectors based on their context in sentences. This matrix helps in understanding how frequently certain words appear together and can be used to capture semantic relationships between words.
