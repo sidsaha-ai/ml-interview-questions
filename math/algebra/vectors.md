@@ -259,7 +259,7 @@ A **norm** is a function that assigns a non-negative length or size to a vector 
 
 Norms have several important properties:
 1. **Non-negativity**: $\vert{x}\vert\geq 0$
-2. **Definiteness**: $\vert{x}\vert\eq 0$ if and only if $x = 0$
+2. **Definiteness**: $\vert{x}\vert\ = 0$ if and only if $x = 0$
 3. **Homogeneity**: \( \|\alpha x\| = |\alpha| \cdot \|x\| \) (scaling property)
 4. **Triangle inequality**: \( \|x + y\| \leq \|x\| + \|y\| \)
 
