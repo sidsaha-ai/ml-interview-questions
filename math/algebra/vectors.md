@@ -30,7 +30,7 @@ In machine learning and deep learning, the dot product frequently shows up in op
 To maximize the dot product between two vectors $\mathbf{u}$ and $\mathbf{v}$, we can leverage the geometric interpretation of the dot product:
 
 $$
-u \cdot v = \vert{u}\vert \vert{b}\ \cos(\theta)
+u \cdot v = \vert{u}\vert \cos(\theta)
 $$
 
 where:
