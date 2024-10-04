@@ -371,28 +371,30 @@ $$
 d(x, y) = \vert{x - y}\vert_2 = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + \dots + (x_n - y_n)^2}
 $$
   
-  This is the **Euclidean distance**, which is an example of a metric derived from the L₂ norm.
+  This is the **Euclidean distance**, which is an example of a metric derived from the $L_2$ norm.
 
 
-### 2. **Given a metric, can we make a norm?**
+##### 2. **Given a metric, can we make a norm?**
 
 Not all **metrics** can generate a **norm**, but some can. In particular, a metric can induce a norm **if and only if** the space is a **vector space** and the metric satisfies additional properties that correspond to norm properties, such as scaling and linearity.
 
-For a metric \( d(x, y) \) to define a norm, it must satisfy the following condition for scalar multiplication:
-\[
-d(\alpha x, 0) = |\alpha| d(x, 0)
-\]
+For a metric $d(x, y)$ to define a norm, it must satisfy the following condition for scalar multiplication:
+
+$$
+d(\alpha x, 0) = \vert{\alpha}\vert d(x, 0)
+$$
 
 This condition ensures that the metric behaves like a norm under scaling.
 
 - **Example**:  
-  The Euclidean metric (distance) can induce the L₂ norm. However, some metrics, like the **discrete metric** (which assigns a distance of 0 for identical points and 1 for distinct points), do not have a corresponding norm because they don’t scale linearly with vector magnitudes.
+  The Euclidean metric (distance) can induce the ${L_2}$ norm. However, some metrics, like the **discrete metric** (which assigns a distance of 0 for identical points and 1 for distinct points), do not have a corresponding norm because they don’t scale linearly with vector magnitudes.
 
----
 
-### Summary:
+##### Summary:
 
 - A **norm** defines the **magnitude** of vectors and can always induce a **metric** that measures the distance between vectors.
 - A **metric** defines the **distance** between points, but not all metrics can induce a norm. Only metrics that satisfy certain conditions, such as being defined on a vector space and obeying linear scaling, can generate a norm.
 
 Norms and metrics are both fundamental in machine learning and mathematics, as they form the basis for measuring distances, similarities, and general relationships in data spaces. Understanding the connection between norms and metrics is essential for tasks such as optimization, regularization, and geometric interpretations of data.
+
+---
