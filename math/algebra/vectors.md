@@ -270,20 +270,15 @@ The $\mathbf{L_0}$ **norm** counts the number of **non-zero elements** in the ve
 
 Formula: $\vert{x}\vert = number \ of \ non \ zero \ elements \ in \ x$
 
-Example: For a vector $x = [3, 0, 4, 0]$, $\vert{x}\vert = 2$ (because there are two non-zero elements: 3 and 4)
+Example: For a vector $x = [3, 0, 4, 0]$, $\vert{x}\vert = 2$ (because there are two non-zero elements: $3$ and $4$)
 
 **Use in Machine Learning**:  
-The L₀ norm is often used in **sparse learning** methods, where the goal is to minimize the number of non-zero features in a model. However, due to its discrete nature, the L₀ norm is non-differentiable and computationally expensive.
+The $L_0$ norm is often used in **sparse learning** methods, where the goal is to minimize the number of non-zero features in a model. However, due to its discrete nature, the $L_0$ norm is non-differentiable and computationally expensive.
 
-##### **L₁ Norm (ℓ₁ norm)**:
-- The **L₁ norm** is the sum of the **absolute values** of the vector elements. It measures the "taxicab" distance between points.
-- Formula:
-  \[
-  \|x\|₁ = \sum_{i=1}^{n} |x_i|
-  \]
-- Example:  
-  For a vector \( x = [3, -4, 5] \),  
-  \( \|x\|₁ = |3| + |-4| + |5| = 12 \).
+##### $\mathbf{L_1}$ norm$:
+The $\mathbf{L_1}$ **norm** is the sum of the **absolute values** of the vector elements. It measures the "taxicab" distance between points.
+Formula: $\vert{x}\vert = \sum_{i=1}^{n} \vert{x_i}\vert$
+Example: For a vector $x = [3, -4, 5]$, $\vert{x}\vert = \vert{3}\vert + \vert{-4}\vert + \vert{5}\vert = 12$.
 
 **Use in Machine Learning**:  
 The L₁ norm is used in **Lasso regression** for feature selection, where it encourages sparsity in the model coefficients, setting many of them to zero.
