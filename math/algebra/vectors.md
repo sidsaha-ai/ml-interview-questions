@@ -11,13 +11,9 @@ $$
 \mathbf{a} \cdot \mathbf{b} = \vert{a}\vert \vert{b}\vert \cos(\theta)
 $$
 
-$$\[
-\mathbf{a} \cdot \mathbf{b} = \|\mathbf{a}\| \|\mathbf{b}\| \cos(\theta)
-\]$$
-
 where:
-- $`\( \|\mathbf{a}\| \)1$ and $`\( \|\mathbf{b}\| \)`$ are the magnitudes (lengths) of the vectors, and
-- $`\( \theta \)`$ is the angle between the two vectors.
+- $`\mathbf{|a|}`$ and $`\mathbf{|b|}`$ are the magnitudes (lengths) of the vectors, and
+- $`\mathbf{\theta}`$ is the angle between the two vectors.
 
 ##### Key Geometrical Insights:
 1. **Cosine Relationship**: The dot product encodes the cosine of the angle between the vectors. If the vectors point in the same direction, $`\( \cos(\theta) = 1 \)`$, and the dot product is maximized. If they are orthogonal (at 90°), $`\( \cos(\theta) = 0 \)`$, and the dot product is zero. If they point in opposite directions, $`\( \cos(\theta) = -1 \)`$, and the dot product is negative.
