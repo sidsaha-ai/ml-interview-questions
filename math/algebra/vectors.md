@@ -24,3 +24,29 @@ where:
 
 ##### Practical Significance in Machine Learning:
 In machine learning and deep learning, the dot product frequently shows up in operations like calculating the similarity between vectors (e.g., in word embeddings), and in neural network layers where it's used for computing linear transformations.
+
+#### Given a vector $\mathbf{u}$, find vector $\mathbf{v}$ of unit length such thsat the dot product of $\mathbf{u}$ and $\mathbf{v}$ is maximum.
+
+To maximize the dot product between two vectors $\mathbf{u}$ and $\mathbf{v}$, we can leverage the geometric interpretation of the dot product:
+
+$$
+u \cdot v = \vert{u}\vert \vert{b}\ \cos(\theta)
+$$
+
+where:
+
+- $\mathbf{\vert{u}\vert}$ and $\mathbf{\vert{v}\vert}$ are the magnitudes (lengths) of the vectors, and
+- $\mathbf{\theta}$ is the angle between the vectors.
+
+Since we are looking for v to have a unit length (i.e., |v| = 1), the equation simplifies to:
+
+$$
+v = u / \vert{u}\vert
+$$
+
+This expression ensures that:
+- $\mathb{v}$ has unit length (i.e. $\mathbf{\vert{v}\vert = 1}$), and
+- The dot product is maximized as $\mathbf{v}$ is aligned with $\mathbf{u}$.
+
+##### Practical Significance:
+In machine learning, this concept is useful in many applications, such as maximizing similarity between vectors (e.g., in embeddings) or optimizing linear models, where aligning a weight vector with the input maximizes the model’s response.
