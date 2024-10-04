@@ -283,17 +283,14 @@ Formula: $\vert{x}\vert = \sum_{i=1}^{n} \vert{x_i}\vert$
 Example: For a vector $x = [3, -4, 5]$, $\vert{x}\vert = \vert{3}\vert + \vert{-4}\vert + \vert{5}\vert = 12$.
 
 **Use in Machine Learning**:  
-The L₁ norm is used in **Lasso regression** for feature selection, where it encourages sparsity in the model coefficients, setting many of them to zero.
+The $\mathbf{L_1}$ norm is used in **Lasso regression** for feature selection, where it encourages sparsity in the model coefficients, setting many of them to zero.
 
-##### **L₂ Norm (ℓ₂ norm or Euclidean norm)**:
-- The **L₂ norm** is the **square root of the sum of the squares** of the vector elements. This is the most commonly used norm and represents the Euclidean distance from the origin to the vector.
-- Formula:
-  \[
-  \|x\|₂ = \sqrt{\sum_{i=1}^{n} x_i^2}
-  \]
-- Example:  
-  For a vector \( x = [3, -4, 5] \),  
-  \( \|x\|₂ = \sqrt{3^2 + (-4)^2 + 5^2} = \sqrt{9 + 16 + 25} = \sqrt{50} \approx 7.07 \).
+##### $\mathbf{L_2}$ norm:
+The $\mathbf{L_2}$ **norm** is the **square root of the sum of the squares** of the vector elements. This is the most commonly used norm and represents the Euclidean distance from the origin to the vector.
+
+Formula: $\vert{x}\vert = \sqrt{\sum_{i=1}^{n} (x_i)^2}$
+
+Example: For a vector $x = [4, -4, 5]$, $\vert{x}\vert = \sqrt{3^2 + (-4)^2 + 5^2} = \sqrt{9 + 16 + 25} = \sqrt{50} \approx 7.07$.
 
 **Use in Machine Learning**:  
 The L₂ norm is used in **Ridge regression** and **SVMs** to minimize the magnitude of the model coefficients, preventing overfitting.
