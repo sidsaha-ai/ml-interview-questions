@@ -40,7 +40,7 @@ where:
 - $\mathbf{\vert{u}\vert}$ and $\mathbf{\vert{v}\vert}$ are the magnitudes (lengths) of the vectors, and
 - $\mathbf{\theta}$ is the angle between the vectors.
 
-Since we are looking for v to have a unit length (i.e., |v| = 1), the equation simplifies to:
+Since we are looking for v to have a unit length (i.e., $\vert{v}\vert = 1$), the equation simplifies to:
 
 $$
 v = u / \vert{u}\vert
